@@ -15,7 +15,7 @@ function mostrarcartao(indicecartao){
 
 btnavancar.addEventListener("click",function(){
 
-    if(cartaoAtual === cartoes.length -1) return;
+    if(cartaoAtual === cartoes.length -1) {cartaoAtual = -1};
 
     escondercartaoselecionado()
 
@@ -28,7 +28,7 @@ btnavancar.addEventListener("click",function(){
 
 btnvoltar.addEventListener("click",function(){
 
-    if(cartaoAtual === 0) return;
+    if(cartaoAtual === 0) {cartaoAtual = cartoes.length};
 
     escondercartaoselecionado();
 
